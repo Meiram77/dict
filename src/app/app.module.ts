@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DepartamentComponent } from './departament/departament.component';
+import { RegionComponent } from './region/region.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DepartamentComponent,
+    RegionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule   //для использования параметра [(ngModel)]="name"
   ],
   providers: [],
   bootstrap: [AppComponent]
